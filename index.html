@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js" defer></script>
+
+<script src="https://kit.fontawesome.com/cb3a40f90f.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="side-bar-logo">
+            <!--insert logo here-->
+            <h1>Admin Dashboard</h1>
+        </div>
+
+        <nav class="side-bar-nav">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <p>Overview</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-ticket"></i>
+                    <p>Tickets</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Ideas</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>Contacts</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-fan"></i>                   
+                    <p>Subcription</p>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-gear"></i>                    
+                    <p>Setting</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Log Out</p>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <main>
+        <header class="header">
+            <h1>Overview</h1>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="user">
+                <p class="name">
+                    Leornado DiCaprio
+                </p>
+                <div class="user-img">
+                    <!--img here-->
+                    <p>img</p>
+                </div>
+            </div>
+        </header>
+
+        <!--To Do status section-->
+        <div class="status-cards">
+            <div class="status-card">
+                <p>Active</p>
+                <p>3</p>
+            </div>
+            <div class="status-card">
+                <p>Inactive</p>
+                <p>6</p>
+            </div>
+            <div class="status-card">
+                <p>Solved</p>
+                <p>38</p>
+            </div>
+            <div class="status-card">
+                <p>Overdue</p>
+                <p>0</p>
+            </div>
+        </div>
+
+        <!--graph trends section-->
+        <div class="trend-container">
+            <div class="graph">
+                <p class="trend-title">Today's trends</p>
+                <!--Insert graph img-->
+            </div>
+            <div class="trend-data">
+                <div class="trend-data-item">
+                    <p>Solved</p>
+                    <p>38</p>
+                </div>
+                <div class="trend-data-item">
+                    <p>Overdue</p>
+                    <p>0</p>
+                </div>
+                <div class="trend-data-item">
+                    <p>Average tasks completed a day</p>
+                    <p>2.6</p>
+                </div>
+                <div class="trend-data-item">
+                    <p>Streaks</p>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+
+        <!--To Do List-->
+        <div class="to-do-cards">
+            <div class="to-do-card">
+                <div class="to-do-header">
+                    <p>To Do List</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div>
+                    <p>Buy groceries</p>
+                    <p class="to-do-card-number">1234</p>
+                </div>
+                <div>
+                    <p>Buy groceries</p>
+                    <p class="to-do-card-number">1234</p>
+                </div>
+                <div>
+                    <p>Buy groceries</p>
+                    <p class="to-do-card-number">1234</p>
+                </div>
+                <div>
+                    <p>Buy groceries</p>
+                    <p class="to-do-card-number">1234</p>
+                </div>
+            </div>
+            
+            <div class="to-do-card">
+                <div class="to-do-header">
+                    <p>Tasks</p>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="to-do-element">
+                    <div class="checkbox-container">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-1">
+                            <label for="checkbox-1"></label>
+                        </div>
+                        <p>Finish ticket update</p>
+                    </div>
+                    <p class="badge" style="background-color: #fec400; color:#fff;">New</p>
+                </div>
+                <div class="to-do-element">
+                    <div class="checkbox-container">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-2">
+                            <label for="checkbox-2"></label>
+                        </div>
+                        <p>Finish ticket update</p>
+                    </div>
+                    <p class="badge" style="background-color: #fa8080; color:#fff;">New</p>
+                </div>
+                <div class="to-do-element">
+                    <div class="checkbox-container">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-3">
+                            <label for="checkbox-3"></label>
+                        </div>
+                        <p>Finish ticket update</p>
+                    </div>
+                    <p class="badge" style="background-color: #5789f7; color:#fff;">New</p>
+                </div>
+                <div class="to-do-element">
+                    <div class="checkbox-container">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox-4">
+                            <label for="checkbox-4"></label>
+                        </div>
+                        <p>Finish ticket update</p>
+                    </div>
+                    <p class="badge" style="background-color: #5fe45f; color:#fff;">New</p>
+                </div>
+            </div>
+       </div> 
+    </main>
+</body>
+</html>
